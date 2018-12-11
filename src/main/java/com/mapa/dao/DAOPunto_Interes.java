@@ -10,19 +10,13 @@ import com.mapa.models.Punto_Interes;
 
 
 public class DAOPunto_Interes {
-
-	private Conexion conexion;
 	
-	public void registrar(Punto_Interes punto){
-       
+	public void registrar(Punto_Interes punto){      
 		String sql = "INSERT INTO puntos_interes(latitud, longitud, title, subtitle) values(?,?,?,?)";
 		try {
-			conexion = new Conexion();
-	        conexion.establecerConexion();
-	        
+			Conexion.getConnection();      
 	        PreparedStatement p_statement =
-                    conexion.getConnection().prepareStatement(sql);
-	        
+                    Conexion.getConnection().prepareStatement(sql);
 	        p_statement.setDouble(1, punto.getLatitud());
 	        p_statement.setDouble(2, punto.getLongitud());
 	        p_statement.setString(3, punto.getTitle());
@@ -31,18 +25,11 @@ public class DAOPunto_Interes {
 	        p_statement.close();
 		} catch (SQLException ex) {
             ex.printStackTrace();
-        } finally {
-        	if(conexion != null) {
-        		conexion.cerrarConexion();
-        	}
-        }
+        } 
 	}
 	
-	public ArrayList<Punto_Interes> listar(){
-		
+	public ArrayList<Punto_Interes> listar(){	
 		ArrayList<Punto_Interes> list = new ArrayList<Punto_Interes>();
-		
-		
 		String sql = "SELECT id, "
 				+ "latitud, "
 				+ "longitud, "
@@ -50,13 +37,9 @@ public class DAOPunto_Interes {
 				+ "subtitle "
 				+ "FROM puntos_interes";
 		try {
-			
-			conexion = new Conexion();
-	        conexion.establecerConexion();
-	        
-	        Statement statement = conexion.getConnection().createStatement();
+			Conexion.getConnection();
+	        Statement statement = Conexion.getConnection().createStatement();
             ResultSet result = statement.executeQuery(sql);
-
 			while(result.next()){
                 list.add(
                         new Punto_Interes(
@@ -71,12 +54,7 @@ public class DAOPunto_Interes {
 			
 		} catch (SQLException ex) {
             ex.printStackTrace();
-        } finally {
-        	if(conexion != null) {
-        		conexion.cerrarConexion();
-        	}
         }
-		return list;
-				
+		return list;			
 	}
 }
