@@ -13,6 +13,9 @@ public class DAOVehiculo{
 	
 	private Conexion conexion;
 	
+	public DAOVehiculo() {
+		
+	}
 	public void registrar(Vehiculo vehiculo){
        
 		String sql = "INSERT INTO vehiculos(latitud, longitud, fecha, velocidad) values(?,?,?,?)";

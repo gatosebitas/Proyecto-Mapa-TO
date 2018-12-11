@@ -14,6 +14,8 @@
     
 
 
+
+
 <jsp:useBean id="greeting" class="com.probando.first.Greeting"/>
   
 <h3>${greeting.hello}</h3>
@@ -21,7 +23,7 @@
 
 <form action="principal" method="post">
 	
-	<input type="submit" value="Apretame :)">
+	<input type="submit" value="Apretame :) o mejor no">
 	</form>
 
 </html>
