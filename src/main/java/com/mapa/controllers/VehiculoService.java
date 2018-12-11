@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response;
 import com.mapa.dao.DAOVehiculo;
 import com.mapa.models.Vehiculo;
 
-@Path("/vehiculos")
+@Path("vehiculos")
 public class VehiculoService {
 
 	private static DAOVehiculo daoVehiculo = new DAOVehiculo();
