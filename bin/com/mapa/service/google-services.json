@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "966237522054",
+    "firebase_url": "https://proyectomap-adbb1.firebaseio.com",
+    "project_id": "proyectomap-adbb1",
+    "storage_bucket": "proyectomap-adbb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966237522054:android:4c3ac7ab83722ed6",
+        "android_client_info": {
+          "package_name": "com.example.fernando.myapplicationmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966237522054-mbciuv65l899q71uuu5urq1da7rkuu2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fernando.myapplicationmap",
+            "certificate_hash": "bf3bc631b7957ec9514f3241ca555573e0d302c4"
+          }
+        },
+        {
+          "client_id": "966237522054-duiqe5ap446uo4u9j4uqkka0flneduoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fernando.myapplicationmap",
+            "certificate_hash": "ee7ae7789cd37e87be6630033231082a0de47bbe"
+          }
+        },
+        {
+          "client_id": "966237522054-rojkvqf10vekdsdqhfem9aurqgctbct7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-eQGNo_ukArVG7sddzc-1XxBlwekraTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966237522054-rojkvqf10vekdsdqhfem9aurqgctbct7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966237522054:android:3e2bcd5d6d0a8a99",
+        "android_client_info": {
+          "package_name": "com.prueba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966237522054-rojkvqf10vekdsdqhfem9aurqgctbct7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-eQGNo_ukArVG7sddzc-1XxBlwekraTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
