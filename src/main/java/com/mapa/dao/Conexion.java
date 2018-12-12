@@ -12,9 +12,13 @@ public class Conexion extends Proxy{
 	private static String url = "jdbc:mysql://localhost/mapadb";
     private static String user = "root";
     private static String password = "";
+<<<<<<< HEAD
     
     static Proxy conection2 = new Proxy();
     
+=======
+	
+>>>>>>> 1e224f328e6f00c23169904e5088976740f77e3a
 	public static Connection getConnection() {
 		try {
 			if(connection == null) {
