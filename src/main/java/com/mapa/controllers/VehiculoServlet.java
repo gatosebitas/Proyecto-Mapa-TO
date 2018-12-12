@@ -27,7 +27,7 @@ public class VehiculoServlet extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
 	FacadeAPI f;
-    public VehiculoServlet() {
+    public VehiculoServlet() throws IllegalArgumentException, IllegalAccessException {
         super();
         f=new FacadeAPI();
         f.initVehiculo();        // TODO Auto-generated constructor stub
