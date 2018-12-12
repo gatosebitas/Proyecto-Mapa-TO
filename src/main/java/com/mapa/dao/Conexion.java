@@ -6,13 +6,15 @@ import java.sql.SQLException;
 
 import javax.management.RuntimeErrorException;
 
-public class Conexion {
+public class Conexion extends Proxy{
 	
 	public static Connection connection;
 	private static String url = "jdbc:mysql://localhost/mapadb";
     private static String user = "root";
-    private static String password = "1234";
-	
+    private static String password = "";
+    
+    static Proxy conection2 = new Proxy();
+    
 	public static Connection getConnection() {
 		try {
 			if(connection == null) {
@@ -21,8 +23,11 @@ public class Conexion {
 	            connection = DriverManager.getConnection(url, user, password);
 			}
             return connection;
-        } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException("Conexion Fallida", e);
+		  } catch (ClassNotFoundException | SQLException e) {
+			//INICIALIZO UNA CONEXION 2 PARA USANDO LA CLASE PROXY
+			  return conection2.getConnection2();
+//			  throw new RuntimeException("Conexion Fallida", e);
+			  
         } 	
     }
 	
