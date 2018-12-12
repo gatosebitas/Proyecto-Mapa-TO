@@ -20,14 +20,14 @@ import com.mapa.models.Vehiculo;
  * Servlet implementation class PrincipalServlet
  */
 @WebServlet("/vehiculo")
-public class VehiculoServlet extends HttpServlet {
+public class VehiculoServlet extends HttpServlet  {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
 	FacadeAPI f;
-    public VehiculoServlet() {
+    public VehiculoServlet() throws IllegalArgumentException, IllegalAccessException  {
         super();
         f=new FacadeAPI();
         f.initVehiculo();        // TODO Auto-generated constructor stub

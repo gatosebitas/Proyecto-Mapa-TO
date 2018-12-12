@@ -2,11 +2,11 @@ package com.mapa.models;
 
 public class Vehiculo {
 
-	 private int id;
-    private Double latitud;
-    private Double longitud;
-    private String fecha;
-    private Double velocidad;
+	public int id;
+	public Double latitud;
+	public Double longitud;
+	public String fecha;
+	public Double velocidad;
     public Vehiculo() {
     	
     }
